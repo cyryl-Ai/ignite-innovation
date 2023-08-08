@@ -1,38 +1,195 @@
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section {
+  padding: 80px 0;
+  height:80%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-container {
+  flex: 1;
+  padding: 20px;
+  max-width: 50%;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-container {
+  flex: 1;
+  padding: 20px;
+  max-width: 50%;
+  text-align: left;
+}
+
+.cream-bg {
+  background-color: #f7f1e3;
+}
+
+.section h2 {
+  color: #1a237e;
+}
+
+.section p {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+}
+/* ... Existing styles ... */
+
+.navbar {
+  background-color: #1a237e;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0;
+  display: flex;
+  justify-content:flex-end;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-item {
+  margin: 0 15px;
+  border-right:auto;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-item a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  margin-right: auto;
+}
+
+.navbar-item a:hover {
+  color: #f7f1e3;
+}
+.image-container {
+  width: 200px;
+  height: 100%;
+  border: none;
+  margin: 10px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+#march {
+  height:100%;
+  padding:20px;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header {
+  background-image:url(./images/oauai4.webp);background-repeat:repeat-x;
+  
+}
+.header .header-content {
+  background-color: none;
+  color:#fdfcdc;
+}
+
+#bran {
+  padding: 5px;
+}/* Add this CSS to reduce spacing between sections */
+.section {
+  margin-bottom: 20px;
+}
+
+/* Add this CSS to reduce spacing between images within sections */
+.image-container {
+  margin-bottom: 40px;
+}
+
+span{
+  color:#fdfcdc;
+}
+#move {
+  background-color: #1a237e;
+  border:none;
+  width:100%;
+  border-radius:20px;
+}
+#description {
+  border-radius:20px;
+}
+
+#hightlight {
+  border-radius:20px;
+}
+
+#eligibility {
+  border-radius:20px;
+}
+
+#guideline {
+  border-radius:20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color:  green;
+  color:  #FEFFAE;
+  border: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  scroll-behavior: smooth;
+}
+
+.cta-button:hover {
+  background-color: #696666e3;
+}
+
+#go {
+  display:flex;
+  justify-content: space-between;
+}
+
+#download {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color:  green;
+  color:  #FEFFAE;
+  border: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  scroll-behavior: smooth;
+}
+.logo {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height:100px;
+  padding: 75px;
+  padding-bottom: 5px;
 }
